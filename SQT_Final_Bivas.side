@@ -1,0 +1,3965 @@
+{
+  "id": "67168f9a-0238-49b5-a01b-e239e6eb7c69",
+  "version": "2.0",
+  "name": "SQT_Final_Bivas",
+  "url": "https://bdjobs.com/default.asp",
+  "tests": [{
+    "id": "4eeb1d64-03d3-4166-b8ce-351efc352dbb",
+    "name": "recover_invalid_check",
+    "commands": [{
+      "id": "25886c7f-98c8-43a7-9e34-7d641c87f767",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6dbe6385-4344-4667-831c-4b4ab04a65be",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99cef4b2-30f2-4174-830c-9a1c8723f3a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=li > .mybdjobs",
+      "targets": [
+        ["css=li > .mybdjobs", "css:finder"],
+        ["xpath=//a[contains(text(),'My Bdjobs')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://mybdjobs.bdjobs.com/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win73",
+      "windowTimeout": 2000
+    }, {
+      "id": "fee4437b-0b48-4f7b-a047-278d5e636bf0",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win73}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ba2d9e0-414e-43e9-9fdc-3983148542dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-8 span",
+      "targets": [
+        ["css=.col-sm-8 span", "css:finder"],
+        ["xpath=//form[@id='form1']/div[2]/div/div[2]/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Forgot User ID/Password?')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6027",
+      "windowTimeout": 2000
+    }, {
+      "id": "e825f08b-659b-4ff6-a5d6-6fc8ee1a0e1b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6027}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a2a90d9-92e5-403e-8589-65454f7a5750",
+      "comment": "",
+      "command": "click",
+      "target": "id=optionsRadios1",
+      "targets": [
+        ["id=optionsRadios1", "id"],
+        ["name=optionsRadios1", "name"],
+        ["css=#optionsRadios1", "css:finder"],
+        ["xpath=//input[@id='optionsRadios1']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/fieldset/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2756ca2b-cdbe-4109-8e27-3b0d55066d8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "771b1264-2997-4e6f-b6a4-37668465422d",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_info",
+      "targets": [
+        ["id=user_info", "id"],
+        ["name=user_info", "name"],
+        ["css=#user_info", "css:finder"],
+        ["xpath=//input[@id='user_info']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22b6acd2-048c-4777-8bf7-a7b079787920",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_info",
+      "targets": [
+        ["id=user_info", "id"],
+        ["name=user_info", "name"],
+        ["css=#user_info", "css:finder"],
+        ["xpath=//input[@id='user_info']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "00000"
+    }, {
+      "id": "7ab4fdad-ab90-45ba-9dc9-d6380c910cec",
+      "comment": "",
+      "command": "click",
+      "target": "id=info_btn",
+      "targets": [
+        ["id=info_btn", "id"],
+        ["css=#info_btn", "css:finder"],
+        ["xpath=//input[@id='info_btn']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f88324f-8943-4a61-abdc-7b3a29871512",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=errorMessage",
+      "targets": [],
+      "value": "Couldn't find your My Bdjobs account!"
+    }]
+  }, {
+    "id": "822c01b3-04c0-459a-846d-57a14819541d",
+    "name": "recover_valid_check",
+    "commands": [{
+      "id": "82a629fe-df45-4561-a65c-6f5ecf9a5c2f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"01614637961\"",
+      "targets": [],
+      "value": "mobile_no"
+    }, {
+      "id": "d6477149-8ccd-4509-b7ac-9e3d90fd9737",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8979c10-120a-43b9-a55f-1c7fc2fa2268",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2060168d-8a09-4c85-98ae-7155e1016260",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[19]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13b46657-e2c8-4802-86ad-d24bc3730d15",
+      "comment": "",
+      "command": "click",
+      "target": "css=li > .mybdjobs",
+      "targets": [
+        ["css=li > .mybdjobs", "css:finder"],
+        ["xpath=//a[contains(text(),'My Bdjobs')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mybdjobs.bdjobs.com/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6149",
+      "windowTimeout": 2000
+    }, {
+      "id": "60e5810c-d625-4322-bd2a-657d05a15245",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6149}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37ace5c8-41f1-49fc-a20f-dbc556034181",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-8 span",
+      "targets": [
+        ["css=.col-sm-8 span", "css:finder"],
+        ["xpath=//form[@id='form1']/div[2]/div/div[2]/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Forgot User ID/Password?')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3558",
+      "windowTimeout": 2000
+    }, {
+      "id": "afc24091-571b-4221-bd38-ffac3be74306",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3558}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97eb9a1f-a8de-4f43-8ef6-266fbcb2ceaf",
+      "comment": "",
+      "command": "click",
+      "target": "id=optionsRadios1",
+      "targets": [
+        ["id=optionsRadios1", "id"],
+        ["name=optionsRadios1", "name"],
+        ["css=#optionsRadios1", "css:finder"],
+        ["xpath=//input[@id='optionsRadios1']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/fieldset/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9d63fbe-8829-4a28-aa45-5861cea504fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "276e9d76-c17d-4f99-9821-71d1701e01d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_info",
+      "targets": [
+        ["id=user_info", "id"],
+        ["name=user_info", "name"],
+        ["css=#user_info", "css:finder"],
+        ["xpath=//input[@id='user_info']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d90a1da5-7843-421b-9183-b2fe5539a9e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_info",
+      "targets": [
+        ["id=user_info", "id"],
+        ["name=user_info", "name"],
+        ["css=#user_info", "css:finder"],
+        ["xpath=//input[@id='user_info']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${mobile_no}"
+    }, {
+      "id": "e2edaede-2097-4805-a696-e37f3c6d75af",
+      "comment": "",
+      "command": "click",
+      "target": "id=info_btn",
+      "targets": [
+        ["id=info_btn", "id"],
+        ["css=#info_btn", "css:finder"],
+        ["xpath=//input[@id='info_btn']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17d7435b-40fb-480f-96ad-0e24f99ed543",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//span[contains(.,'01614637961')]",
+      "targets": [
+        ["css=.color-blue", "css:finder"],
+        ["xpath=//form[@id='userForm']/div/div[2]/fieldset/div/label/strong/span", "xpath:idRelative"],
+        ["xpath=//strong/span", "xpath:position"],
+        ["xpath=//span[contains(.,'01614637961')]", "xpath:innerText"]
+      ],
+      "value": "z"
+    }, {
+      "id": "113d6d79-43e6-4eb4-96a8-9cb8f03f39dd",
+      "comment": "",
+      "command": "if",
+      "target": "${mobile_no} == ${z}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbd87cc8-9dd5-4818-8df3-54e264b82bb4",
+      "comment": "",
+      "command": "echo",
+      "target": "ACCOUNT FOUND",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f983ac27-c4c5-4fb3-aa75-24fb7222273b",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c06e059-6ea0-4b78-af40-03f08e3fc475",
+      "comment": "",
+      "command": "echo",
+      "target": "ACCOUNT NOT FOUND",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5feb626-9c11-40d6-a028-d055b2597aac",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1dff72f0-d41f-427c-b841-579f11a59581",
+    "name": "recover_otp_test",
+    "commands": [{
+      "id": "31bffe23-82ea-43aa-a75c-4ae024dd5b43",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"01614637961\"",
+      "targets": [],
+      "value": "mobile_no"
+    }, {
+      "id": "d0cd8601-590a-4c95-b19c-57da76eaa152",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f49beeb7-9b56-40b7-8747-d70fb2bf81b8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d007a0e-d4f3-4b68-a67b-c6213700e30c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[19]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "732d718f-fa6f-4472-a0e1-4711f53ff6e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=li > .mybdjobs",
+      "targets": [
+        ["css=li > .mybdjobs", "css:finder"],
+        ["xpath=//a[contains(text(),'My Bdjobs')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mybdjobs.bdjobs.com/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6149",
+      "windowTimeout": 2000
+    }, {
+      "id": "08cefcea-f426-4c19-9730-d4847afab021",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6149}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f90b8c6-1ddf-49be-8c0d-9d3f195d6ff4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-8 span",
+      "targets": [
+        ["css=.col-sm-8 span", "css:finder"],
+        ["xpath=//form[@id='form1']/div[2]/div/div[2]/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Forgot User ID/Password?')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3558",
+      "windowTimeout": 2000
+    }, {
+      "id": "879f0188-de50-4953-b44c-9648c2a402f6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3558}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b35bb551-a6ab-4386-b96b-4192198c2437",
+      "comment": "",
+      "command": "click",
+      "target": "id=optionsRadios1",
+      "targets": [
+        ["id=optionsRadios1", "id"],
+        ["name=optionsRadios1", "name"],
+        ["css=#optionsRadios1", "css:finder"],
+        ["xpath=//input[@id='optionsRadios1']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/fieldset/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "726a05c3-6324-45f8-beca-4a34d24edd5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d54febf-6d58-4437-a517-bc9a9347c1ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_info",
+      "targets": [
+        ["id=user_info", "id"],
+        ["name=user_info", "name"],
+        ["css=#user_info", "css:finder"],
+        ["xpath=//input[@id='user_info']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cab504fc-3ed6-49c0-b570-47ca2c64c078",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_info",
+      "targets": [
+        ["id=user_info", "id"],
+        ["name=user_info", "name"],
+        ["css=#user_info", "css:finder"],
+        ["xpath=//input[@id='user_info']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${mobile_no}"
+    }, {
+      "id": "06221d21-9957-4a32-888a-5d1f4c44427d",
+      "comment": "",
+      "command": "click",
+      "target": "id=info_btn",
+      "targets": [
+        ["id=info_btn", "id"],
+        ["css=#info_btn", "css:finder"],
+        ["xpath=//input[@id='info_btn']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fba33cfc-d4e2-4a09-894e-3314a7c1aae1",
+      "comment": "",
+      "command": "click",
+      "target": "id=userIDRadio",
+      "targets": [
+        ["id=userIDRadio", "id"],
+        ["name=userIDRadio", "name"],
+        ["css=#userIDRadio", "css:finder"],
+        ["xpath=//input[@id='userIDRadio']", "xpath:attributes"],
+        ["xpath=//form[@id='userForm']/div/div[2]/fieldset/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f80a352-4de9-47d5-9c6e-c0866166cbd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Continue']", "xpath:attributes"],
+        ["xpath=//form[@id='userForm']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d90b293-7792-4b76-8c32-95b2ff09bcdd",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h4[contains(.,'Enter verification code')]",
+      "targets": [],
+      "value": "Enter verification code"
+    }]
+  }, {
+    "id": "9e087865-7f6b-4117-803e-3c5e2ae0986d",
+    "name": "recover_user_id",
+    "commands": [{
+      "id": "a26ac8b7-0f17-4dc7-8756-ed6e8824b33a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"01614637961\"",
+      "targets": [],
+      "value": "mobile_no"
+    }, {
+      "id": "c4531075-bb72-461a-aa98-3380a7f86623",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e3bb827-2807-4417-9fc8-cd6dfe9172be",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94971ec0-494a-4679-b8e5-49439b2fd0be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[19]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1b2d9b8-6d54-433c-b013-8948740d8e13",
+      "comment": "",
+      "command": "click",
+      "target": "css=li > .mybdjobs",
+      "targets": [
+        ["css=li > .mybdjobs", "css:finder"],
+        ["xpath=//a[contains(text(),'My Bdjobs')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mybdjobs.bdjobs.com/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6149",
+      "windowTimeout": 2000
+    }, {
+      "id": "a8cbcbd1-3e0c-46be-a431-bafa33050b51",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6149}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9cc9d6e-531d-46f4-944b-f12648d4d309",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-8 span",
+      "targets": [
+        ["css=.col-sm-8 span", "css:finder"],
+        ["xpath=//form[@id='form1']/div[2]/div/div[2]/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Forgot User ID/Password?')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3558",
+      "windowTimeout": 2000
+    }, {
+      "id": "d0c84a66-ab27-47f4-b17c-ef93f995cffb",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3558}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97791068-cc2a-4e2f-b581-7ecb6e10cbd2",
+      "comment": "",
+      "command": "click",
+      "target": "id=optionsRadios1",
+      "targets": [
+        ["id=optionsRadios1", "id"],
+        ["name=optionsRadios1", "name"],
+        ["css=#optionsRadios1", "css:finder"],
+        ["xpath=//input[@id='optionsRadios1']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/fieldset/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e506daf-0612-465c-b49b-62022362992b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d3651e3-c2b9-4431-8c4c-1d1a33c1e91f",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_info",
+      "targets": [
+        ["id=user_info", "id"],
+        ["name=user_info", "name"],
+        ["css=#user_info", "css:finder"],
+        ["xpath=//input[@id='user_info']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "970fc420-f719-4e5b-bf33-72bc47ff6913",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_info",
+      "targets": [
+        ["id=user_info", "id"],
+        ["name=user_info", "name"],
+        ["css=#user_info", "css:finder"],
+        ["xpath=//input[@id='user_info']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${mobile_no}"
+    }, {
+      "id": "359f4e27-0eec-47c9-beff-d7c1cdc5237d",
+      "comment": "",
+      "command": "click",
+      "target": "id=info_btn",
+      "targets": [
+        ["id=info_btn", "id"],
+        ["css=#info_btn", "css:finder"],
+        ["xpath=//input[@id='info_btn']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2e5e503-d498-4397-a78e-97405fffda00",
+      "comment": "",
+      "command": "click",
+      "target": "id=userIDRadio",
+      "targets": [
+        ["id=userIDRadio", "id"],
+        ["name=userIDRadio", "name"],
+        ["css=#userIDRadio", "css:finder"],
+        ["xpath=//input[@id='userIDRadio']", "xpath:attributes"],
+        ["xpath=//form[@id='userForm']/div/div[2]/fieldset/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18bf0188-d77f-4983-b758-0654a2f87f48",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Continue']", "xpath:attributes"],
+        ["xpath=//form[@id='userForm']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c57d91e-9ba2-4095-a5a7-f22c46def64c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return prompt(\"Enter OTP\",\"\")",
+      "targets": [],
+      "value": "otp"
+    }, {
+      "id": "6c58e520-94eb-45b0-b4e1-c4a2a7cc96c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=otpCode",
+      "targets": [],
+      "value": "${otp}"
+    }, {
+      "id": "5c851c2b-f749-43a1-b6a6-5b8eba9b84e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "231a00a8-b4f0-46d1-b63f-90e257b7b9d7",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h4[contains(.,'Successful')]",
+      "targets": [],
+      "value": "Successful"
+    }]
+  }, {
+    "id": "d26803ef-3e5f-44a9-938f-26597bf37918",
+    "name": "recover_user_password",
+    "commands": [{
+      "id": "724cab85-9188-436d-ab6d-f5cdedb85403",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"01614637961\"",
+      "targets": [],
+      "value": "phone"
+    }, {
+      "id": "4b584b87-cf14-41c0-82ff-264951ffb3cb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.floor(10000000 + Math.random() * 90000000)",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "c8cf8170-52b3-4fd4-8005-5ad055f39abe",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 'saaaaad'",
+      "targets": [],
+      "value": "uname"
+    }, {
+      "id": "07fda757-5764-4295-9c26-8e1df26cb14d",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcae7396-3b20-452d-acc9-965a9c3b50cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af1e41ef-1033-4df1-b572-0e0484086d6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[19]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "580fa88c-4536-444c-8630-72b4b36b9a97",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Sign in or Create Account",
+      "targets": [
+        ["linkText=Sign in or Create Account", "linkText"],
+        ["css=.soca > a", "css:finder"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[28]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in or Create Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3df7a31-a123-42d7-b069-1eda86b71c29",
+      "comment": "",
+      "command": "click",
+      "target": "css=li > .mybdjobs",
+      "targets": [
+        ["css=li > .mybdjobs", "css:finder"],
+        ["xpath=//a[contains(text(),'My Bdjobs')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mybdjobs.bdjobs.com/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2154",
+      "windowTimeout": 2000
+    }, {
+      "id": "620a44a0-5510-4aa5-9283-32c2521b6197",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2154}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3971dc5e-3bd3-4278-85f1-87fce6d295f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-8 span",
+      "targets": [
+        ["css=.col-sm-8 span", "css:finder"],
+        ["xpath=//form[@id='form1']/div[2]/div/div[2]/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Forgot User ID/Password?')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7924",
+      "windowTimeout": 2000
+    }, {
+      "id": "a2e5a21f-8288-4ba1-81c2-c79e83e28f69",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7924}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61af3caa-57c4-4660-849f-475326c0cc19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.radio:nth-child(3) .fw-600",
+      "targets": [
+        ["css=.radio:nth-child(3) .fw-600", "css:finder"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/fieldset/div[2]/label/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "602cfd2d-45ab-48f7-9c81-f87253363f8f",
+      "comment": "",
+      "command": "click",
+      "target": "id=userID",
+      "targets": [
+        ["id=userID", "id"],
+        ["name=userID", "name"],
+        ["css=#userID", "css:finder"],
+        ["xpath=//input[@id='userID']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21756549-51c9-46fc-baed-342d91020776",
+      "comment": "",
+      "command": "type",
+      "target": "id=userID",
+      "targets": [
+        ["id=userID", "id"],
+        ["name=userID", "name"],
+        ["css=#userID", "css:finder"],
+        ["xpath=//input[@id='userID']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${phone}"
+    }, {
+      "id": "540c7723-c973-443f-8e94-8e799cbf6515",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6d20b19-0b73-403f-b493-99de55389210",
+      "comment": "",
+      "command": "click",
+      "target": "id=optionsRadios1",
+      "targets": [
+        ["id=optionsRadios1", "id"],
+        ["name=optionsRadios1", "name"],
+        ["css=#optionsRadios1", "css:finder"],
+        ["xpath=//input[@id='optionsRadios1']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/fieldset/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b45e62da-85fb-4a53-ab68-eafcaeae3b07",
+      "comment": "",
+      "command": "click",
+      "target": "id=mobile",
+      "targets": [
+        ["id=mobile", "id"],
+        ["name=mobile", "name"],
+        ["css=#mobile", "css:finder"],
+        ["xpath=//input[@id='mobile']", "xpath:attributes"],
+        ["xpath=//div[@id='mobilecollapse']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "785c1478-b214-4676-b5e8-3228b8ab364a",
+      "comment": "",
+      "command": "type",
+      "target": "id=mobile",
+      "targets": [
+        ["id=mobile", "id"],
+        ["name=mobile", "name"],
+        ["css=#mobile", "css:finder"],
+        ["xpath=//input[@id='mobile']", "xpath:attributes"],
+        ["xpath=//div[@id='mobilecollapse']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${phone}"
+    }, {
+      "id": "0bd01dcd-ee5b-47c1-bb50-5318bd63a989",
+      "comment": "",
+      "command": "click",
+      "target": "id=fbtn",
+      "targets": [
+        ["id=fbtn", "id"],
+        ["css=#fbtn", "css:finder"],
+        ["xpath=//input[@id='fbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b473c1bf-67d6-4775-8a67-dcf84de3bc71",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return prompt(\"Enter password reset code\",\"\")",
+      "targets": [],
+      "value": "pass_reset_code"
+    }, {
+      "id": "e7c23a37-771a-46dc-b896-e8759ea745c8",
+      "comment": "",
+      "command": "type",
+      "target": "id=otpCode",
+      "targets": [
+        ["id=otpCode", "id"],
+        ["name=otpCode", "name"],
+        ["css=#otpCode", "css:finder"],
+        ["xpath=//input[@id='otpCode']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${pass_reset_code}"
+    }, {
+      "id": "ea7f56d1-8c38-4d84-8f0f-27ce25910535",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=otpCode",
+      "targets": [
+        ["id=otpCode", "id"],
+        ["name=otpCode", "name"],
+        ["css=#otpCode", "css:finder"],
+        ["xpath=//input[@id='otpCode']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "72762622-83e2-4ef3-a177-a85845f25faa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.signin-user-wrapper",
+      "targets": [
+        ["css=.signin-user-wrapper", "css:finder"],
+        ["xpath=//form[@id='form1']/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa5f2ebf-473a-4cfa-827c-9df702a213d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=newPass",
+      "targets": [
+        ["id=newPass", "id"],
+        ["name=newPass", "name"],
+        ["css=#newPass", "css:finder"],
+        ["xpath=//input[@id='newPass']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8db1708-f494-4606-8412-66ce78eb54d0",
+      "comment": "",
+      "command": "type",
+      "target": "id=newPass",
+      "targets": [
+        ["id=newPass", "id"],
+        ["name=newPass", "name"],
+        ["css=#newPass", "css:finder"],
+        ["xpath=//input[@id='newPass']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "5cf0178c-003a-4b42-a55e-57cda074bb6f",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirmPass",
+      "targets": [
+        ["id=confirmPass", "id"],
+        ["name=confirmPass", "name"],
+        ["css=#confirmPass", "css:finder"],
+        ["xpath=//input[@id='confirmPass']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "0e536e23-0a3f-4a17-987d-ff144b4c844d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50d1975c-8fc5-48eb-8c6c-93486a782601",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo .img-responsive",
+      "targets": [
+        ["css=.logo .img-responsive", "css:finder"],
+        ["xpath=//img[@alt='Logo of bdjobs.com']", "xpath:img"],
+        ["xpath=//nav/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "798ec5e9-58da-4b5f-bc70-81b0bef900e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[19]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cd0589d-3ab0-4fa6-8e00-bcdde0f315ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=li > .mybdjobs",
+      "targets": [
+        ["css=li > .mybdjobs", "css:finder"],
+        ["xpath=//a[contains(text(),'My Bdjobs')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://mybdjobs.bdjobs.com/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5294",
+      "windowTimeout": 2000
+    }, {
+      "id": "8a274779-85a6-40ad-9fa7-bff9e1325b98",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5294}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a28bae90-5859-4b1c-980f-72f5892d206a",
+      "comment": "",
+      "command": "click",
+      "target": "id=TXTUSERNAME",
+      "targets": [
+        ["id=TXTUSERNAME", "id"],
+        ["name=TXTUSERNAME", "name"],
+        ["css=#TXTUSERNAME", "css:finder"],
+        ["xpath=//input[@id='TXTUSERNAME']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "daae76de-b5bb-448c-9bb5-7f3c29e38d51",
+      "comment": "",
+      "command": "type",
+      "target": "id=TXTUSERNAME",
+      "targets": [
+        ["id=TXTUSERNAME", "id"],
+        ["name=TXTUSERNAME", "name"],
+        ["css=#TXTUSERNAME", "css:finder"],
+        ["xpath=//input[@id='TXTUSERNAME']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${phone}"
+    }, {
+      "id": "9c5e9d19-a26a-421f-ba24-186c78b8665a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Next']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88d00d6f-b3a5-4a0e-a00a-9588664e7687",
+      "comment": "",
+      "command": "click",
+      "target": "id=TXTPASS",
+      "targets": [
+        ["id=TXTPASS", "id"],
+        ["name=TXTPASS", "name"],
+        ["css=#TXTPASS", "css:finder"],
+        ["xpath=//input[@id='TXTPASS']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df073cfe-d184-47ba-94da-c7ed8afab826",
+      "comment": "",
+      "command": "type",
+      "target": "id=TXTPASS",
+      "targets": [
+        ["id=TXTPASS", "id"],
+        ["name=TXTPASS", "name"],
+        ["css=#TXTPASS", "css:finder"],
+        ["xpath=//input[@id='TXTPASS']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "7cc94781-1d06-4b72-a688-670615c44016",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Sign in']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3aca75b-1778-42b6-b396-0fb6cb0bbc94",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.user-name",
+      "targets": [
+        ["css=.user-name", "css:finder"],
+        ["xpath=//a[@id='userDetailsDropdown']/span", "xpath:idRelative"],
+        ["xpath=//li[8]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'saaaaad')]", "xpath:innerText"]
+      ],
+      "value": "${uname}"
+    }]
+  }, {
+    "id": "6c1c1bdb-e77c-45d2-97aa-264c2974577c",
+    "name": "recover_otp_validation",
+    "commands": [{
+      "id": "304082d2-061d-4eea-8a38-ba17da34edb6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return '01614637961'",
+      "targets": [],
+      "value": "phone"
+    }, {
+      "id": "7145f930-999c-4a22-a9a6-d11547fbd647",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.floor(100000 + Math.random() * 900000)",
+      "targets": [],
+      "value": "rand_otp"
+    }, {
+      "id": "a20a8d45-8352-4242-85f4-a90125d928c5",
+      "comment": "",
+      "command": "echo",
+      "target": "${rand_otp}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc7fbbb8-85f5-4bb3-9b7b-c7ca94111a56",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83126df8-4416-47bd-96e0-c641399110ea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0dcae0a8-fb02-42f7-970d-496af4e009c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[19]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "affc75b1-1ca3-4b70-ba42-cdac8ba9e86c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Career Resources",
+      "targets": [
+        ["linkText=Career Resources", "linkText"],
+        ["css=.nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Career Resources')]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(1);')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Career Resources ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86a1b455-885a-4129-a66a-1e4990761a32",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Career Resources",
+      "targets": [
+        ["linkText=Career Resources", "linkText"],
+        ["css=.nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Career Resources')]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(1);')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Career Resources ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b3cb353-1555-43a1-bcd1-0a8e99eba74f",
+      "comment": "",
+      "command": "click",
+      "target": "css=li > .mybdjobs",
+      "targets": [
+        ["css=li > .mybdjobs", "css:finder"],
+        ["xpath=//a[contains(text(),'My Bdjobs')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mybdjobs.bdjobs.com/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6476",
+      "windowTimeout": 2000
+    }, {
+      "id": "d7b8eb4a-cf9a-402a-a215-b720f2fe58eb",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6476}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45a9a363-e4fc-47b5-a829-0bf44cdede1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-8",
+      "targets": [
+        ["css=.col-sm-8", "css:finder"],
+        ["xpath=//form[@id='form1']/div[2]/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c41cf7e2-ff26-4b1b-85a8-bc865f553c67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-8 span",
+      "targets": [
+        ["css=.col-sm-8 span", "css:finder"],
+        ["xpath=//form[@id='form1']/div[2]/div/div[2]/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Forgot User ID/Password?')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win455",
+      "windowTimeout": 2000
+    }, {
+      "id": "737ad79b-27b3-47bb-9a3c-8f4b628b448e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win455}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "661d7e49-1b70-4f51-8c2f-6952d7fff0c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=optionsRadios1",
+      "targets": [
+        ["id=optionsRadios1", "id"],
+        ["name=optionsRadios1", "name"],
+        ["css=#optionsRadios1", "css:finder"],
+        ["xpath=//input[@id='optionsRadios1']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/fieldset/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10279273-e662-41cc-b7bd-4d49a4f7bab4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acaae1b4-5385-480d-8ef0-e13dac370b29",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_info",
+      "targets": [
+        ["id=user_info", "id"],
+        ["name=user_info", "name"],
+        ["css=#user_info", "css:finder"],
+        ["xpath=//input[@id='user_info']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44b72bad-d3b4-4697-b4ad-7a805248eea0",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_info",
+      "targets": [
+        ["id=user_info", "id"],
+        ["name=user_info", "name"],
+        ["css=#user_info", "css:finder"],
+        ["xpath=//input[@id='user_info']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${phone}"
+    }, {
+      "id": "3005be36-7520-49df-b484-0e2b5deb404b",
+      "comment": "",
+      "command": "click",
+      "target": "id=info_btn",
+      "targets": [
+        ["id=info_btn", "id"],
+        ["css=#info_btn", "css:finder"],
+        ["xpath=//input[@id='info_btn']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f49a8f6-1115-4a32-ad64-26c60cf4a691",
+      "comment": "",
+      "command": "click",
+      "target": "id=userIDRadio",
+      "targets": [
+        ["id=userIDRadio", "id"],
+        ["name=userIDRadio", "name"],
+        ["css=#userIDRadio", "css:finder"],
+        ["xpath=//input[@id='userIDRadio']", "xpath:attributes"],
+        ["xpath=//form[@id='userForm']/div/div[2]/fieldset/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a07fa8f5-6210-4c9a-ac1f-0c73d314acd1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Continue']", "xpath:attributes"],
+        ["xpath=//form[@id='userForm']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64aa933c-e6dc-44ac-bc8b-3631a79051e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=otpCode",
+      "targets": [
+        ["id=otpCode", "id"],
+        ["name=otpCode", "name"],
+        ["css=#otpCode", "css:finder"],
+        ["xpath=//input[@id='otpCode']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ddd092d-2c04-4184-a49f-634a11f5f553",
+      "comment": "",
+      "command": "type",
+      "target": "id=otpCode",
+      "targets": [
+        ["id=otpCode", "id"],
+        ["name=otpCode", "name"],
+        ["css=#otpCode", "css:finder"],
+        ["xpath=//input[@id='otpCode']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${rand_otp}"
+    }, {
+      "id": "bccf0ef7-8458-4718-a573-6641722a2ac6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcfc4da8-893f-4d99-98ce-e83c49a687c2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//h4[contains(.,'verification code')]",
+      "targets": [],
+      "value": "verification code"
+    }]
+  }, {
+    "id": "8b573d47-5079-4e9d-acfc-78e60a8e135f",
+    "name": "course_wishlist_filter_test",
+    "commands": [{
+      "id": "359b44f8-d6da-4311-b9b6-3ea6570ad048",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 0",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "d5fb8efd-53bc-44aa-b42d-078571297280",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4964f49-187a-424e-825f-27b34feae454",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "905698db-fb19-43e6-837a-85eae6933dc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[21]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b7f1252-5022-4fa9-8dd4-ce010314a898",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=E-LEARNING",
+      "targets": [
+        ["linkText=E-LEARNING", "linkText"],
+        ["css=li > .training", "css:finder"],
+        ["xpath=//a[contains(text(),'E-LEARNING')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://bdjobs.com/m_d_l/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'E-LEARNING')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3224",
+      "windowTimeout": 2000
+    }, {
+      "id": "5b3b11a6-99c8-42e2-acce-929b08ac53d2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3224}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2e31e25-6a9b-4773-bc2d-49c8b2942a39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e067b8a-13df-45f6-88ec-75df19c13497",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-expander",
+      "targets": [
+        ["id=nav-expander", "id"],
+        ["linkText=Browse Courses", "linkText"],
+        ["css=#nav-expander", "css:finder"],
+        ["xpath=//a[@id='nav-expander']", "xpath:attributes"],
+        ["xpath=//li[4]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78447717-4532-4a9c-8bf3-3a75c86c4e2b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=IT",
+      "targets": [
+        ["linkText=IT", "linkText"],
+        ["css=.list-unstyled > li:nth-child(11) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'IT')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'workshoplist.asp?track=5')]", "xpath:href"],
+        ["xpath=//li[11]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'IT')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6484",
+      "windowTimeout": 2000
+    }, {
+      "id": "8c2d27dd-4d65-4878-b3ac-013abc720a4e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6484}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26f072a3-5ef7-41d9-bd08-e3b27f27de05",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[contains(@class,'cardPopOver')]",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "30014360-c662-4fc2-a6e0-cb237f260635",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e4d993a-0628-4219-817f-10804b40d20a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id='${i}']/div[3]/div[4]/div[2]/div/a[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aef30d8b-9d6d-489e-b3e4-10dc2616733a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sliding-title",
+      "targets": [
+        ["css=.sliding-title", "css:finder"],
+        ["xpath=//a[@id='nav-expander']/span", "xpath:idRelative"],
+        ["xpath=//div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Browse Courses  ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "045d5b36-520b-4368-8e8b-10b499bf8ec6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=IT",
+      "targets": [
+        ["linkText=IT", "linkText"],
+        ["css=.list-unstyled > li:nth-child(11) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'IT')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'workshoplist.asp?track=5')]", "xpath:href"],
+        ["xpath=//li[11]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'IT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a86f448c-ba24-42f4-b5a8-5fc7f358d59a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${i} + 1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "17b8187d-dec5-4475-af5d-e02cb1485d18",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${i} < ${x}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27a216b2-51e0-412f-bbce-3921cee6c469",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mcb > span",
+      "targets": [
+        ["css=.mcb > span", "css:finder"],
+        ["xpath=//form[@id='form']/div/div/div/div[2]/div/div/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'My Courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6f98399-8f1e-451d-b914-377b25a435dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=actiontype",
+      "targets": [
+        ["id=actiontype", "id"],
+        ["name=actiontype", "name"],
+        ["css=#actiontype", "css:finder"],
+        ["xpath=//select[@id='actiontype']", "xpath:attributes"],
+        ["xpath=//form[@id='mycourseform']/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c34054e9-cdb1-439b-9d59-fcb6ee3ed88e",
+      "comment": "",
+      "command": "select",
+      "target": "id=actiontype",
+      "targets": [],
+      "value": "label=Wishlisted"
+    }, {
+      "id": "9d7a449f-2c50-4969-968d-2da6ad76be14",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sub-btn",
+      "targets": [
+        ["css=.sub-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='mycourseform']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b351abfb-fc42-4522-830a-cad2a15ae39f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.mgbadge",
+      "targets": [
+        ["css=.mgbadge", "css:finder"],
+        ["xpath=//h2/span", "xpath:position"],
+        ["xpath=//span[contains(.,'6')]", "xpath:innerText"]
+      ],
+      "value": "${x}"
+    }]
+  }, {
+    "id": "a0d1a07e-187d-42b8-8760-b50ee883b139",
+    "name": "course_wishlist_unwishlist",
+    "commands": [{
+      "id": "115e6a8f-5e4f-471f-849d-e7269e0ba25a",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3e33e19-28ee-4a2a-91ca-98e3a37219a0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6255d6a0-768a-4b3b-b4d2-edd77c817675",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[21]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13dc4512-c17b-4d16-95b8-e94516f5ba0e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=E-LEARNING",
+      "targets": [
+        ["linkText=E-LEARNING", "linkText"],
+        ["css=li > .training", "css:finder"],
+        ["xpath=//a[contains(text(),'E-LEARNING')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://bdjobs.com/m_d_l/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'E-LEARNING')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5024",
+      "windowTimeout": 2000
+    }, {
+      "id": "91ff461c-b4cc-4fd2-9a33-f7c5e3508af1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5024}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d9c445b-3701-4131-9444-86806c3bee98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06a0ef94-c1e3-49fa-af01-439347e717c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My Courses",
+      "targets": [
+        ["linkText=My Courses", "linkText"],
+        ["css=.li-menu:nth-child(3) > .btn", "css:finder"],
+        ["xpath=(//a[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'Mycourses.asp')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88cfc352-69d7-425a-9997-41e99deca84a",
+      "comment": "",
+      "command": "click",
+      "target": "id=actiontype",
+      "targets": [
+        ["id=actiontype", "id"],
+        ["name=actiontype", "name"],
+        ["css=#actiontype", "css:finder"],
+        ["xpath=//select[@id='actiontype']", "xpath:attributes"],
+        ["xpath=//form[@id='mycourseform']/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a106e850-d6d3-40d1-9ad2-427fd89a2b4a",
+      "comment": "",
+      "command": "select",
+      "target": "id=actiontype",
+      "targets": [],
+      "value": "label=Wishlisted"
+    }, {
+      "id": "5d9415d7-a0df-46fc-b73e-3fad5ddf9904",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sub-btn",
+      "targets": [
+        ["css=.sub-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='mycourseform']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2b0366b-bc9d-432a-9860-c9e2cf4038e5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.sub-btn",
+      "targets": [
+        ["css=.sub-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='mycourseform']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ec97cd6-cd14-454b-b630-ceb8e4c3858f",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.mgbadge",
+      "targets": [
+        ["css=.mgbadge", "css:finder"],
+        ["xpath=//h2/span", "xpath:position"],
+        ["xpath=//span[contains(.,'0')]", "xpath:innerText"]
+      ],
+      "value": "x"
+    }, {
+      "id": "f7144718-2dd1-4107-85e0-fc43517e01a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-expander",
+      "targets": [
+        ["id=nav-expander", "id"],
+        ["linkText=Browse Courses", "linkText"],
+        ["css=#nav-expander", "css:finder"],
+        ["xpath=//a[@id='nav-expander']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div/div[2]/div/div/ul/li[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//li[3]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ad2f797-a175-4471-afaf-bc05b6f6daa4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HR",
+      "targets": [
+        ["linkText=HR", "linkText"],
+        ["css=.list-unstyled > li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'HR')]", "xpath:link"],
+        ["xpath=//form[@id='form']/div/div/div/div[2]/div/div/ul/li[3]/nav/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'workshoplist.asp?track=2')]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'HR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70f404f9-5587-4fd9-864b-b127a8f2524d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Wishlist",
+      "targets": [
+        ["linkText=Wishlist", "linkText"],
+        ["css=.btn-primary:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Wishlist')]", "xpath:link"],
+        ["xpath=//div[@id='0']/div[3]/div[4]/div[2]/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'registration.asp?TrainingId=97378&ua=rfw&upcoming=')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,' Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46b8bebb-c7d3-4ed9-9265-eab2682dfe73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sliding-title",
+      "targets": [
+        ["css=.sliding-title", "css:finder"],
+        ["xpath=//a[@id='nav-expander']/span", "xpath:idRelative"],
+        ["xpath=//div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Browse Courses  ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26866e0d-ea7a-41ed-9f86-10500af89139",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HR",
+      "targets": [
+        ["linkText=HR", "linkText"],
+        ["css=.list-unstyled > li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'HR')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'workshoplist.asp?track=2')]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'HR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "766c441c-14bd-4a5a-8d8f-83ba14a7a648",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Wishlist",
+      "targets": [
+        ["linkText=Wishlist", "linkText"],
+        ["css=.btn-primary:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Wishlist')]", "xpath:link"],
+        ["xpath=//div[@id='0']/div[3]/div[4]/div[2]/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'registration.asp?TrainingId=97378&ua=rfw&upcoming=')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,' Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10e67542-7105-4f12-bfa4-646f3fe76303",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Wishlist",
+      "targets": [
+        ["linkText=Wishlist", "linkText"],
+        ["css=.btn-primary:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Wishlist')]", "xpath:link"],
+        ["xpath=//div[@id='0']/div[3]/div[4]/div[2]/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'registration.asp?TrainingId=97378&ua=rfw&upcoming=')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,' Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18999720-05ce-4aa4-b475-cfc697147feb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My Courses",
+      "targets": [
+        ["linkText=My Courses", "linkText"],
+        ["css=.mcb", "css:finder"],
+        ["xpath=//a[@type='button']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, 'Mycourses.asp')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c88d7e5f-4d41-4322-b085-87fcc7b29e9d",
+      "comment": "",
+      "command": "click",
+      "target": "id=actiontype",
+      "targets": [
+        ["id=actiontype", "id"],
+        ["name=actiontype", "name"],
+        ["css=#actiontype", "css:finder"],
+        ["xpath=//select[@id='actiontype']", "xpath:attributes"],
+        ["xpath=//form[@id='mycourseform']/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ca4e315-05b3-4da5-b949-469546e6e698",
+      "comment": "",
+      "command": "select",
+      "target": "id=actiontype",
+      "targets": [],
+      "value": "label=Wishlisted"
+    }, {
+      "id": "b2fd9aff-864c-42ce-8e4e-9bf815170e81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sub-btn",
+      "targets": [
+        ["css=.sub-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='mycourseform']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7428ed72-b303-4a45-858c-8873b07483c2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mgbadge",
+      "targets": [],
+      "value": "${x}"
+    }, {
+      "id": "66abfd76-4d56-40fe-96ce-48cae4469afd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "592cbb8e-3092-401d-acc3-bfb8dfbe124f",
+    "name": "course_register_filter_test",
+    "commands": [{
+      "id": "7ebd5294-3234-482d-a685-448ba90584ea",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be52bc76-d457-4e71-936b-b382a53284df",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28ac5226-c07e-4d61-bfd4-5c10adb2fde9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[21]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d79abb2-d297-4204-996b-c8e24892a8a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=E-LEARNING",
+      "targets": [
+        ["linkText=E-LEARNING", "linkText"],
+        ["css=li > .training", "css:finder"],
+        ["xpath=//a[contains(text(),'E-LEARNING')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://bdjobs.com/m_d_l/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'E-LEARNING')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5100",
+      "windowTimeout": 2000
+    }, {
+      "id": "0ef7747a-24ee-47e2-8c6a-9d2a47f54a53",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5100}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c778595a-beea-48fa-8cd8-e66fb064166c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "131d18ca-c178-43ed-8e9e-3ce66cf8ebe3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.li-menu:nth-child(3) span",
+      "targets": [
+        ["css=.li-menu:nth-child(3) span", "css:finder"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'My Courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bf0e1bf-96c6-470c-b1ab-7f2cd1ab813d",
+      "comment": "",
+      "command": "click",
+      "target": "id=actiontype",
+      "targets": [
+        ["id=actiontype", "id"],
+        ["name=actiontype", "name"],
+        ["css=#actiontype", "css:finder"],
+        ["xpath=//select[@id='actiontype']", "xpath:attributes"],
+        ["xpath=//form[@id='mycourseform']/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37d94828-1cb5-4368-a994-6f80e477a0ed",
+      "comment": "",
+      "command": "select",
+      "target": "id=actiontype",
+      "targets": [],
+      "value": "label=Registered"
+    }, {
+      "id": "6e3f8a3c-00bc-492d-a1da-9c8925dbe42d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sub-btn",
+      "targets": [
+        ["css=.sub-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='mycourseform']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a86db6c-8ecf-442e-bd7c-6447cee7c602",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.mgbadge",
+      "targets": [
+        ["css=.mgbadge", "css:finder"],
+        ["xpath=//h2/span", "xpath:position"],
+        ["xpath=//span[contains(.,'0')]", "xpath:innerText"]
+      ],
+      "value": "reg_count"
+    }, {
+      "id": "21eb322f-bb52-4159-9855-cabf17e4445a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sliding-title",
+      "targets": [
+        ["css=.sliding-title", "css:finder"],
+        ["xpath=//a[@id='nav-expander']/span", "xpath:idRelative"],
+        ["xpath=//div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Browse Courses  ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d15f926a-635f-4f3f-b244-22194abdee6e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HR",
+      "targets": [
+        ["linkText=HR", "linkText"],
+        ["css=.list-unstyled > li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'HR')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'workshoplist.asp?track=2')]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'HR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "627d2833-7206-4fe1-b733-1247551f21c4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//div[@id='0']/div[3]/div[4]/div[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'registration.asp?TrainingId=97378&ua=r')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7687a3a-9368-47e8-a88a-96a02bac3619",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wrapper-main",
+      "targets": [
+        ["css=.wrapper-main", "css:finder"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b41c6745-0087-4c0d-a68e-597cc269f378",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#DivRegistrationInfoPoint > h3",
+      "targets": [],
+      "value": "You have successfully Registered to this training"
+    }, {
+      "id": "53459825-8e21-4732-96d4-66e352ad03a5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return parseInt(${reg_count}) + 1",
+      "targets": [],
+      "value": "reg_count"
+    }, {
+      "id": "dd8812e7-cab6-47f4-9429-26c1d87cbc23",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My Courses",
+      "targets": [
+        ["linkText=My Courses", "linkText"],
+        ["css=.mcb", "css:finder"],
+        ["xpath=//a[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div/div[2]/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'Mycourses.asp')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b7f1204-3bab-4d83-a576-8e873e0b2c35",
+      "comment": "",
+      "command": "click",
+      "target": "id=actiontype",
+      "targets": [
+        ["id=actiontype", "id"],
+        ["name=actiontype", "name"],
+        ["css=#actiontype", "css:finder"],
+        ["xpath=//select[@id='actiontype']", "xpath:attributes"],
+        ["xpath=//form[@id='mycourseform']/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09db829c-84ce-44d1-83ee-73893376a020",
+      "comment": "",
+      "command": "select",
+      "target": "id=actiontype",
+      "targets": [],
+      "value": "label=Registered"
+    }, {
+      "id": "c8d5ec86-a43e-4427-b2c9-21632b870a22",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sub-btn",
+      "targets": [
+        ["css=.sub-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='mycourseform']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d4a54b9-8cfd-46b6-a95d-4e818a53a116",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.mgbadge",
+      "targets": [
+        ["css=.mgbadge", "css:finder"],
+        ["xpath=//h2/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": "curr_value"
+    }, {
+      "id": "c0edea11-ccb7-4a6c-a5ce-ee6872dff37a",
+      "comment": "",
+      "command": "if",
+      "target": "${reg_count} == ${curr_value}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09923d4c-9fdd-4f9d-8b66-7e4a798573ea",
+      "comment": "",
+      "command": "echo",
+      "target": "TRUE",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e42894b8-8af5-4b3e-bd1c-aeb2c7390152",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dcff585-0df6-4781-8df2-6c76ff19c785",
+      "comment": "",
+      "command": "echo",
+      "target": "FALSE",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e2f32b2-1def-4ff5-91a6-3b3f80652920",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0eb1d3a6-7881-4da8-a352-ae648c1cd886",
+    "name": "course_email_training_info_test",
+    "commands": [{
+      "id": "434a79df-70e6-446a-9ecf-e5c77dc4b081",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e0adaa7-8635-4858-a5f7-5091ba44cccc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ee898c7-07f0-4ad9-b7bf-fd391d11d50d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[21]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fd642dd-ec02-4709-83c6-457dc9ba1bfc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=E-LEARNING",
+      "targets": [
+        ["linkText=E-LEARNING", "linkText"],
+        ["css=li > .training", "css:finder"],
+        ["xpath=//a[contains(text(),'E-LEARNING')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://bdjobs.com/m_d_l/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'E-LEARNING')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6796",
+      "windowTimeout": 2000
+    }, {
+      "id": "44eb6cfe-2b40-406a-bd49-c37b5e9076d6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6796}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab44d975-75e3-4f17-8101-d8a03403c3b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b75df375-3696-4d8d-9f23-bd295efd0a41",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Arrival",
+      "targets": [
+        ["linkText=New Arrival", "linkText"],
+        ["css=.li-menu:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//a[@type='button']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'NewArrival.asp')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' New Arrival')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1144",
+      "windowTimeout": 2000
+    }, {
+      "id": "0a80b9f6-5043-421c-b377-a1c2d4fbcdaf",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1144}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d4b1f1f-1942-4642-be36-35fb19854ff9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-6:nth-child(1) .title-date",
+      "targets": [
+        ["css=.col-sm-6:nth-child(1) .title-date", "css:finder"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6750",
+      "windowTimeout": 2000
+    }, {
+      "id": "76722f01-68fb-4bcd-92ae-a2c68536e58d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6750}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c74bdc7c-dd49-4434-bf75-99a5175254f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.email-btn",
+      "targets": [
+        ["css=.email-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Email Training Info')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13d0c111-3899-4920-a64d-8dd8485108c6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.email-btn",
+      "targets": [
+        ["css=.email-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Email Training Info')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c009531d-8ef5-4a77-aad9-7c61e0c7223e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.email-btn",
+      "targets": [
+        ["css=.email-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Email Training Info')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fc2a734-6451-438e-9e2f-9ffba0fd27b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtReceiverName",
+      "targets": [
+        ["id=txtReceiverName", "id"],
+        ["name=txtReceiverName", "name"],
+        ["css=#txtReceiverName", "css:finder"],
+        ["xpath=//input[@id='txtReceiverName']", "xpath:attributes"],
+        ["xpath=//div[@id='modal_body']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fcbf6f1-4916-4dd7-a499-daa8b9206765",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtReceiverName",
+      "targets": [
+        ["id=txtReceiverName", "id"],
+        ["name=txtReceiverName", "name"],
+        ["css=#txtReceiverName", "css:finder"],
+        ["xpath=//input[@id='txtReceiverName']", "xpath:attributes"],
+        ["xpath=//div[@id='modal_body']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "joe"
+    }, {
+      "id": "0b8eb8e5-f3d5-48e3-a220-ba28e115faff",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=.col-md-6 > #txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='modal_body']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b7dfe51-671b-4826-bd36-fc25e02af9b1",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=.col-md-6 > #txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='modal_body']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "bivasdas911@gmail.com"
+    }, {
+      "id": "b0144c7d-d090-42fa-8728-03a3f346a4f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtSenderName",
+      "targets": [
+        ["id=txtSenderName", "id"],
+        ["name=txtSenderName", "name"],
+        ["css=#txtSenderName", "css:finder"],
+        ["xpath=//input[@id='txtSenderName']", "xpath:attributes"],
+        ["xpath=//div[@id='modal_body']/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f96f9274-1335-4ade-9c4b-8bbf5e612573",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenderName",
+      "targets": [
+        ["id=txtSenderName", "id"],
+        ["name=txtSenderName", "name"],
+        ["css=#txtSenderName", "css:finder"],
+        ["xpath=//input[@id='txtSenderName']", "xpath:attributes"],
+        ["xpath=//div[@id='modal_body']/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "savib"
+    }, {
+      "id": "833d758f-1823-4375-912c-ffcca604f925",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtSenderEmail",
+      "targets": [
+        ["id=txtSenderEmail", "id"],
+        ["name=txtSenderEmail", "name"],
+        ["css=#txtSenderEmail", "css:finder"],
+        ["xpath=//input[@id='txtSenderEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='modal_body']/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "979b4eb8-af88-4789-9949-c7ec9630b341",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenderEmail",
+      "targets": [
+        ["id=txtSenderEmail", "id"],
+        ["name=txtSenderEmail", "name"],
+        ["css=#txtSenderEmail", "css:finder"],
+        ["xpath=//input[@id='txtSenderEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='modal_body']/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": "dbivas27@gmail.com"
+    }, {
+      "id": "a501b89c-fe37-460a-8d26-80e0e956a5db",
+      "comment": "",
+      "command": "click",
+      "target": "id=emailSubmitButton",
+      "targets": [
+        ["id=emailSubmitButton", "id"],
+        ["css=#emailSubmitButton", "css:finder"],
+        ["xpath=//input[@id='emailSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='modal_body']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dde5ae57-32fa-425b-a68a-1f88ee4545d2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=modal-body_status2",
+      "targets": [
+        ["id=modal-body_status2", "id"],
+        ["css=#modal-body_status2", "css:finder"],
+        ["xpath=//div[@id='modal-body_status2']", "xpath:attributes"],
+        ["xpath=//div[@id='Review_status_modal2']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "Your mail has been sent to your friend"
+    }, {
+      "id": "9b2c7f4b-67fb-4270-b33a-cdec67305566",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Review_status_modal2 .close",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "33aa45b9-254c-4009-b1ad-f4ea7fc5151e",
+    "name": "report_job_post_test_signed_out",
+    "commands": [{
+      "id": "e871b2d9-e94b-4357-aa5e-11d2f7d3c2f0",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a12c5d4-1e1e-459e-a672-3c10bcb590db",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1532x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e8bc7c1-f0b9-4d76-b547-52f023cce175",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[19]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbbffba5-c0e8-403c-838e-e23b6de9e936",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jobs",
+      "targets": [
+        ["css=.jobs", "css:finder"],
+        ["xpath=//a[contains(text(),'Jobs')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://jobs.bdjobs.com/jobsearch.asp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca29937b-abf6-404f-b88c-ba1fd857b953",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Electronics and Electric Maintainer",
+      "targets": [
+        ["linkText=Electronics and Electric Maintainer", "linkText"],
+        ["css=.col-md-12:nth-child(7) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Electronics and Electric Maintainer')]", "xpath:link"],
+        ["xpath=(//a[@onclick='clickJObTitle()'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='jobList']/div/div/div[7]/div/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'jobdetails.asp?id=1111370&ln=1')]", "xpath:href"],
+        ["xpath=//div[7]/div/div/div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Electronics and Electric Maintainer')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4595",
+      "windowTimeout": 2000
+    }, {
+      "id": "ac47f657-dd2d-4314-8ea4-b661d13e1eed",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4595}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfa6c6a1-654f-40ca-ae21-e976478ac07e",
+      "comment": "",
+      "command": "click",
+      "target": "id=ReportThisJobId",
+      "targets": [
+        ["id=ReportThisJobId", "id"],
+        ["css=#ReportThisJobId", "css:finder"],
+        ["xpath=//a[@id='ReportThisJobId']", "xpath:attributes"],
+        ["xpath=//div[@id='job-preview']/div[2]/div[2]/div/div/div[3]/div/div[2]/span[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(9);')]", "xpath:href"],
+        ["xpath=//span[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee1870dd-519d-4375-a401-8902018f13db",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "60df4181-562a-4d4e-808d-76c2e6532ba8",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='frmReport']/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c84a2b81-b920-49a1-accd-3f19df33878d",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtemail",
+      "targets": [
+        ["id=txtemail", "id"],
+        ["name=txtemail", "name"],
+        ["css=#txtemail", "css:finder"],
+        ["xpath=//input[@id='txtemail']", "xpath:attributes"],
+        ["xpath=//form[@id='frmReport']/div/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f16e52f-b27e-41be-92ce-0c3d21651377",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=emailErrorMsg",
+      "targets": [
+        ["id=emailErrorMsg", "id"],
+        ["css=#emailErrorMsg", "css:finder"],
+        ["xpath=//div[@id='emailErrorMsg']", "xpath:attributes"],
+        ["xpath=//form[@id='frmReport']/div/fieldset/div/div/div", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/div", "xpath:position"]
+      ],
+      "value": "Email Address /Mobile Number field is blank! Please type your Email Address/ Mobile Number properly."
+    }, {
+      "id": "ac130c44-e0ff-4bb0-b239-14f363f53760",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=reportTypeErrorMsg",
+      "targets": [
+        ["id=reportTypeErrorMsg", "id"],
+        ["css=#reportTypeErrorMsg", "css:finder"],
+        ["xpath=//div[@id='reportTypeErrorMsg']", "xpath:attributes"],
+        ["xpath=//form[@id='frmReport']/div/fieldset/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Please select a Report Type."
+    }, {
+      "id": "784013dc-e88f-42a1-a277-d90ab4769d90",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtemail",
+      "targets": [
+        ["id=txtemail", "id"],
+        ["name=txtemail", "name"],
+        ["css=#txtemail", "css:finder"],
+        ["xpath=//input[@id='txtemail']", "xpath:attributes"],
+        ["xpath=//form[@id='frmReport']/div/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ded436f0-7c0d-4ac5-ba63-5890406f1a95",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtemail",
+      "targets": [
+        ["id=txtemail", "id"],
+        ["name=txtemail", "name"],
+        ["css=#txtemail", "css:finder"],
+        ["xpath=//input[@id='txtemail']", "xpath:attributes"],
+        ["xpath=//form[@id='frmReport']/div/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "00000000000"
+    }, {
+      "id": "effc2709-9a3b-425c-95ce-54f3a54f9296",
+      "comment": "",
+      "command": "click",
+      "target": "id=reportType",
+      "targets": [
+        ["id=reportType", "id"],
+        ["name=reportType", "name"],
+        ["css=#reportType", "css:finder"],
+        ["xpath=//select[@id='reportType']", "xpath:attributes"],
+        ["xpath=//form[@id='frmReport']/div/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1759e763-b039-45ae-a154-84b648490ab2",
+      "comment": "",
+      "command": "select",
+      "target": "id=reportType",
+      "targets": [],
+      "value": "label=Invalid Data/ Texual mistakes"
+    }, {
+      "id": "6d815bb1-2dcc-4930-b302-cd0ee8d47529",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='frmReport']/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "576cdd06-539f-4180-bb55-2e61b21cf32e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.Shoj-wrap",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbc9234a-7961-4767-b309-88e02789d16f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Shoj-wrap",
+      "targets": [
+        ["css=.Shoj-wrap", "css:finder"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eefaae0f-7b0b-4bfc-a33f-1d2ad7096a31",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s-text",
+      "targets": [
+        ["css=.s-text", "css:finder"],
+        ["xpath=//td/div/div", "xpath:position"]
+      ],
+      "value": "Your report for this job has been received.\\n\\nWe will verify the report on an urgent basis and take necessary steps to make the job search more secure and friendly to you."
+    }, {
+      "id": "c8472177-5837-4461-aeda-e2c01a55d960",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "62de0402-dc1f-487f-aab5-80fcf4f3abe7",
+    "name": "report_job_post_test_signed_in",
+    "commands": [{
+      "id": "3a0cfb4f-109f-476c-a431-5f512cff687f",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb581ee6-2e95-4090-bb2b-a11db5d74389",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1532x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39d69850-241b-4cb1-a4eb-aa67d5cfe82d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[19]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36cf7bd8-f8c9-4ef6-b7e6-aded7dc77055",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jobs",
+      "targets": [
+        ["css=.jobs", "css:finder"],
+        ["xpath=//a[contains(text(),'Jobs')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://jobs.bdjobs.com/jobsearch.asp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7838586-ea3b-4d70-81d2-f0dcdd8f0a41",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Electronics and Electric Maintainer",
+      "targets": [
+        ["linkText=Electronics and Electric Maintainer", "linkText"],
+        ["css=.col-md-12:nth-child(7) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Electronics and Electric Maintainer')]", "xpath:link"],
+        ["xpath=(//a[@onclick='clickJObTitle()'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='jobList']/div/div/div[7]/div/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'jobdetails.asp?id=1111370&ln=1')]", "xpath:href"],
+        ["xpath=//div[7]/div/div/div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Electronics and Electric Maintainer')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4595",
+      "windowTimeout": 2000
+    }, {
+      "id": "6ce92bc5-9059-469e-952e-770021b26e08",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4595}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9417820-1ce8-4d54-87dd-f7c8833ccf0f",
+      "comment": "",
+      "command": "click",
+      "target": "id=ReportThisJobId",
+      "targets": [
+        ["id=ReportThisJobId", "id"],
+        ["css=#ReportThisJobId", "css:finder"],
+        ["xpath=//a[@id='ReportThisJobId']", "xpath:attributes"],
+        ["xpath=//div[@id='job-preview']/div[2]/div[2]/div/div/div[3]/div/div[2]/span[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(9);')]", "xpath:href"],
+        ["xpath=//span[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a0833d8-f87e-4f03-ba49-d0c236f88024",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f8f57e9-dcc5-4761-8fab-abb9075b8e7d",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='frmReport']/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04cf1ad0-f3a4-4556-bd19-70fcc2671a82",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=reportTypeErrorMsg",
+      "targets": [
+        ["id=reportTypeErrorMsg", "id"],
+        ["css=#reportTypeErrorMsg", "css:finder"],
+        ["xpath=//div[@id='reportTypeErrorMsg']", "xpath:attributes"],
+        ["xpath=//form[@id='frmReport']/div/fieldset/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Please select a Report Type."
+    }, {
+      "id": "fba4cbcd-061c-4a37-81d8-a4e2ecac171c",
+      "comment": "",
+      "command": "click",
+      "target": "id=reportType",
+      "targets": [
+        ["id=reportType", "id"],
+        ["name=reportType", "name"],
+        ["css=#reportType", "css:finder"],
+        ["xpath=//select[@id='reportType']", "xpath:attributes"],
+        ["xpath=//form[@id='frmReport']/div/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5765f174-3ea6-45f3-8db8-1894dc525675",
+      "comment": "",
+      "command": "select",
+      "target": "id=reportType",
+      "targets": [],
+      "value": "label=Invalid Data/ Texual mistakes"
+    }, {
+      "id": "17cb76d3-34d6-4ef5-9d54-930b8a5e9385",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='frmReport']/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "051b35ea-07e5-4041-9758-6ad51bcb03d0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.Shoj-wrap",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aed4b6c5-20e2-4a8c-847f-194477fc24ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Shoj-wrap",
+      "targets": [
+        ["css=.Shoj-wrap", "css:finder"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fda61eb3-8279-4f32-b8e3-87234cb74e29",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s-text",
+      "targets": [
+        ["css=.s-text", "css:finder"],
+        ["xpath=//td/div/div", "xpath:position"]
+      ],
+      "value": "Your report for this job has been received.\\n\\nWe will verify the report on an urgent basis and take necessary steps to make the job search more secure and friendly to you."
+    }, {
+      "id": "ab4636f1-2230-451f-855a-a0a3dbc27649",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9cdeb1d0-2a30-4745-bfd0-1c69d81487ae",
+    "name": "favourite_search_add_remove",
+    "commands": [{
+      "id": "2a08699b-237b-4f3f-8987-e758a8b1c0a4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 5",
+      "targets": [],
+      "value": "count"
+    }, {
+      "id": "33b580a2-96cb-4331-a8b9-b287d3da4380",
+      "comment": "",
+      "command": "times",
+      "target": "${count}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6fec587-6677-4890-ba19-584d25ab76de",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.random().toString(36).slice(2, 7)",
+      "targets": [],
+      "value": "rand"
+    }, {
+      "id": "31ce9067-615b-41db-a8e0-e9706127811f",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a4fa6d7-250d-4dc9-b3dc-44e9dc24ea11",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7868b055-7c97-4eb1-a794-9827dab1c0c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[21]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c224b281-184d-4904-9ee2-f04c7d4ebe7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jobs",
+      "targets": [
+        ["css=.jobs", "css:finder"],
+        ["xpath=//a[contains(text(),'Jobs')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://jobs.bdjobs.com/jobsearch.asp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0951ed8b-01fe-456f-bdbd-f5137be6417b",
+      "comment": "",
+      "command": "echo",
+      "target": "${rand}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a95cbd3f-aadb-48bd-88c1-ebc0ee44b4fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-1 span",
+      "targets": [
+        ["css=.dropdown-1 span", "css:finder"],
+        ["xpath=//div[@id='stickyl']/ul/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//form/div/ul/li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Category')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "168ed837-25a1-4451-84db-001942e03b42",
+      "comment": "",
+      "command": "click",
+      "target": "id=spfcat1",
+      "targets": [
+        ["id=spfcat1", "id"],
+        ["css=#spfcat1", "css:finder"],
+        ["xpath=//label[@id='spfcat1']", "xpath:attributes"],
+        ["xpath=//div[@id='mCSB_1_container']/fieldset/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/fieldset/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Accounting/Finance')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c235a42f-fff4-4ddc-8772-01ae46bee88e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown:nth-child(3) .done-button-sm",
+      "targets": [
+        ["css=.dropdown:nth-child(3) .done-button-sm", "css:finder"],
+        ["xpath=(//input[@name='btnSend'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='stickyl']/ul/li[3]/ul/li/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div/div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b598db2-6cfc-4d10-82cf-d29db6c9caea",
+      "comment": "",
+      "command": "click",
+      "target": "css=span > i > img",
+      "targets": [
+        ["css=span > i > img", "css:finder"],
+        ["xpath=//img[@alt='favouriteSearch']", "xpath:img"],
+        ["xpath=//a[@id='FScfss']/span/i/img", "xpath:idRelative"],
+        ["xpath=//i/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2472491a-2442-46ac-9f38-d2a81d0e66ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=userfiltername",
+      "targets": [
+        ["id=userfiltername", "id"],
+        ["name=userfiltername", "name"],
+        ["css=#userfiltername", "css:finder"],
+        ["xpath=//input[@id='userfiltername']", "xpath:attributes"],
+        ["xpath=//form[@id='frmJobSearch']/div[3]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d449f84-77f6-4fcd-9d9e-cd55201be780",
+      "comment": "",
+      "command": "type",
+      "target": "id=userfiltername",
+      "targets": [
+        ["id=userfiltername", "id"],
+        ["name=userfiltername", "name"],
+        ["css=#userfiltername", "css:finder"],
+        ["xpath=//input[@id='userfiltername']", "xpath:attributes"],
+        ["xpath=//form[@id='frmJobSearch']/div[3]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/input", "xpath:position"]
+      ],
+      "value": "${rand}"
+    }, {
+      "id": "55562ecc-76c6-485e-82a7-b9cc44b25d21",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pop2 .btn",
+      "targets": [
+        ["css=.pop2 .btn", "css:finder"],
+        ["xpath=(//input[@name='btnSubmit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='frmJobSearch']/div[3]/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a888d88-a051-480b-8a70-fa34173bc158",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "756828ac-6d81-48fe-8971-bc2b1847a43c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mybdjobs",
+      "targets": [
+        ["css=.mybdjobs", "css:finder"],
+        ["xpath=//a[contains(text(),'My Bdjobs')]", "xpath:link"],
+        ["xpath=//div[@id='menu']/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mybdjobs.bdjobs.com/mybdjobs/welcome.asp')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6153",
+      "windowTimeout": 2000
+    }, {
+      "id": "5b801be1-6d00-4ae1-9c20-f2a7633cc02b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6153}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "216e456a-1cc6-4176-a859-b5fb17d7788e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-heart-o",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cdcee62-dd62-48fc-add5-16b0ef31e3f0",
+      "comment": "",
+      "command": "times",
+      "target": "${count}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9d7d6bd-0181-469b-ba14-2d5aca5401e7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Delete",
+      "targets": [
+        ["linkText=Delete", "linkText"],
+        ["css=#delFilter0 .col-md-2 > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete')]", "xpath:link"],
+        ["xpath=//div[@id='delFilter0']/div/div/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:delSaveFilter(327784,0);')]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "432789d0-6704-49a5-b1ff-6a49bc1aa83f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default:nth-child(2)",
+      "targets": [
+        ["css=.btn-default:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fabf30bc-f30d-475b-89b7-9de1fef730db",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fffe0dcf-1cec-4507-b71e-d0b6424660fd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=sfCounter",
+      "targets": [
+        ["id=sfCounter", "id"],
+        ["css=#sfCounter", "css:finder"],
+        ["xpath=//span[@id='sfCounter']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/div[2]/div/h2/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/h2/span", "xpath:position"],
+        ["xpath=//span[contains(.,'0')]", "xpath:innerText"]
+      ],
+      "value": "0"
+    }]
+  }, {
+    "id": "f22b2497-52ea-4dd3-8cb2-f6a5090f979d",
+    "name": "favourite_search_check",
+    "commands": [{
+      "id": "c30a30cd-98aa-4d8f-89c4-f20d9419e4af",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58789ad7-a101-4f92-a2ae-f245e7818995",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77c761e2-0ef2-4e95-af8f-031187d5cd90",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[21]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7460bbf1-843a-4c55-a815-cfa6be4e12e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jobs",
+      "targets": [
+        ["css=.jobs", "css:finder"],
+        ["xpath=//a[contains(text(),'Jobs')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://jobs.bdjobs.com/jobsearch.asp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a7b1579-8eab-4ecb-ada6-61ed28a48054",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Category",
+      "targets": [
+        ["linkText=Category", "linkText"],
+        ["css=.dropdown-1 > .dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='stickyl']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//form/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Category')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "928a5163-8a6e-447f-b572-91f45a5e323e",
+      "comment": "",
+      "command": "click",
+      "target": "id=spfcat1",
+      "targets": [
+        ["id=spfcat1", "id"],
+        ["css=#spfcat1", "css:finder"],
+        ["xpath=//label[@id='spfcat1']", "xpath:attributes"],
+        ["xpath=//div[@id='mCSB_1_container']/fieldset/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Accounting/Finance')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58049d3e-7544-45e8-bf7d-5ee9928ea5e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown:nth-child(3) .done-button-sm",
+      "targets": [
+        ["css=.dropdown:nth-child(3) .done-button-sm", "css:finder"],
+        ["xpath=(//input[@name='btnSend'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='stickyl']/ul/li[3]/ul/li/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div/div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d760458-4b1b-4347-a459-34f554862761",
+      "comment": "",
+      "command": "click",
+      "target": "css=#FScfss > span",
+      "targets": [
+        ["css=#FScfss > span", "css:finder"],
+        ["xpath=//a[@id='FScfss']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,' Save as Favourite')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "acb8d400-79ff-46c0-bd91-0dc184931e1a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#FScfss > span",
+      "targets": [
+        ["css=#FScfss > span", "css:finder"],
+        ["xpath=//a[@id='FScfss']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,' Save as Favourite')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f84f17d7-0438-4fea-a00e-5b83507317b7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#FScfss > span",
+      "targets": [
+        ["css=#FScfss > span", "css:finder"],
+        ["xpath=//a[@id='FScfss']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,' Save as Favourite')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b51b2ec-8cf3-4087-8f73-0962d629f400",
+      "comment": "",
+      "command": "click",
+      "target": "id=userfiltername",
+      "targets": [
+        ["id=userfiltername", "id"],
+        ["name=userfiltername", "name"],
+        ["css=#userfiltername", "css:finder"],
+        ["xpath=//input[@id='userfiltername']", "xpath:attributes"],
+        ["xpath=//form[@id='frmJobSearch']/div[3]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ab0f3cc-7e3f-4efa-9e6e-69ad83052987",
+      "comment": "",
+      "command": "type",
+      "target": "id=userfiltername",
+      "targets": [
+        ["id=userfiltername", "id"],
+        ["name=userfiltername", "name"],
+        ["css=#userfiltername", "css:finder"],
+        ["xpath=//input[@id='userfiltername']", "xpath:attributes"],
+        ["xpath=//form[@id='frmJobSearch']/div[3]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/input", "xpath:position"]
+      ],
+      "value": "acc"
+    }, {
+      "id": "bcd2b71d-ae59-4f0a-b5dd-8e725753b8aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pop2 .btn",
+      "targets": [
+        ["css=.pop2 .btn", "css:finder"],
+        ["xpath=(//input[@name='btnSubmit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='frmJobSearch']/div[3]/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "871b9748-4137-411c-8c5c-87c4d710ad02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mybdjobs",
+      "targets": [
+        ["css=.mybdjobs", "css:finder"],
+        ["xpath=//a[contains(text(),'My Bdjobs')]", "xpath:link"],
+        ["xpath=//div[@id='menu']/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mybdjobs.bdjobs.com/mybdjobs/welcome.asp')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7245",
+      "windowTimeout": 2000
+    }, {
+      "id": "cfe0ed12-b4bb-4fb2-bf00-30a48b28f4a3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7245}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb825d5a-8036-4a51-8243-ea8c538d572a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-heart-o",
+      "targets": [
+        ["css=.icon-heart-o", "css:finder"],
+        ["xpath=//nav[@id='sidebar']/ul/li[7]/ul/li/a/i", "xpath:idRelative"],
+        ["xpath=//li[7]/ul/li/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dba188d8-23c3-4ab9-b1ed-f746208c37e5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=acc",
+      "targets": [
+        ["linkText=acc", "linkText"],
+        ["css=.word-break", "css:finder"],
+        ["xpath=//a[contains(text(),'acc')]", "xpath:link"],
+        ["xpath=//div[@id='delFilter0']/div/div/div[2]/span/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mybdjobs.bdjobs.com/mybdjobs/favouritesearch_view.asp?intFId=327819')]", "xpath:href"],
+        ["xpath=//span/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'acc')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "311e2ea3-0b61-4339-8d16-ff254a955b7b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit/ View",
+      "targets": [
+        ["linkText=Edit/ View", "linkText"],
+        ["css=.btn-vew", "css:finder"],
+        ["xpath=//div[@id='main']/div[2]/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://jobs.bdjobs.com/jobsearch.asp?hClickLog=0&SaveFilterList=327819')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit/ View')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8466",
+      "windowTimeout": 2000
+    }, {
+      "id": "e355052a-33d0-40a0-906e-8b5d50eadc3f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8466}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f514a241-b678-4fa0-918a-2411245ed07f",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=crtfcat",
+      "targets": [
+        ["id=crtfcat", "id"],
+        ["css=#crtfcat", "css:finder"],
+        ["xpath=//div[@id='crtfcat']", "xpath:attributes"],
+        ["xpath=//div[@id='mft']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "filter_text"
+    }, {
+      "id": "9199f4d1-1889-4a2c-a52d-28fb15d42b6e",
+      "comment": "",
+      "command": "echo",
+      "target": "${filter_text}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5c53e99-0add-48d9-a994-69683fc3bb64",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var txt = ${filter_text};return txt.split('/').shift().slice(0, -3);",
+      "targets": [],
+      "value": "res"
+    }, {
+      "id": "236d9475-ee0f-4d97-b878-9af050252b63",
+      "comment": "",
+      "command": "echo",
+      "target": "${res}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81d78768-19b0-4a2f-ad9e-2961aacce6bd",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//div[contains(.,${res})]",
+      "targets": [],
+      "value": "c"
+    }, {
+      "id": "8792ae60-e9ef-43f5-ad1a-0d7ea4adc11d",
+      "comment": "",
+      "command": "if",
+      "target": "${c} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "576a5f01-405d-400d-864b-43af191cd493",
+      "comment": "",
+      "command": "echo",
+      "target": "SEARCH SUCESSFUL",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f5b311e-b255-4022-aa00-83a005d671c8",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90e93a8f-a296-41f6-a587-f95923d2511c",
+      "comment": "",
+      "command": "echo",
+      "target": "SEARCH FAILURE",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "050bd4c4-2297-4cfd-aad5-70d599fb9953",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1ad9f9cc-cb50-4119-b3ca-7de3c1607c9e",
+    "name": "custom_course_validation",
+    "commands": [{
+      "id": "f254bcbd-23d9-46c1-8d31-97ec5d10367f",
+      "comment": "",
+      "command": "open",
+      "target": "https://bdjobs.com/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87a0c393-de82-47e5-a6ab-57e890b3a047",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b388204e-f980-4999-8f0f-ac23ceaba0e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[21]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9df1d4e7-1f2c-46f1-94c4-eef300238da7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=E-LEARNING",
+      "targets": [
+        ["linkText=E-LEARNING", "linkText"],
+        ["css=li > .training", "css:finder"],
+        ["xpath=//a[contains(text(),'E-LEARNING')]", "xpath:link"],
+        ["xpath=//div[@id='lin_header_top02']/div/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://bdjobs.com/m_d_l/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'E-LEARNING')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4865",
+      "windowTimeout": 2000
+    }, {
+      "id": "21f99170-5f33-4f04-bdb8-834593fbf556",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4865}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d3ad11b-eef2-456d-94f6-98d275ebfc03",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbwrap > img",
+      "targets": [
+        ["css=.cbwrap > img", "css:finder"],
+        ["xpath=//img[@alt='Close Main popup']", "xpath:img"],
+        ["xpath=//div[@id='popUpDiv']/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac4614d4-651d-4c08-935c-7c9ebd7b3219",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Customized Courses",
+      "targets": [
+        ["linkText=Customized Courses", "linkText"],
+        ["css=.border-enable:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Customized Courses')]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'customizedtrainining.asp')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Customized Courses')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7435",
+      "windowTimeout": 2000
+    }, {
+      "id": "b6fff2e3-7fa9-4a06-afbd-4dd638487ef8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7435}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "439efb94-ceb4-4176-b596-1786510e2bc0",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["name=submitButton", "name"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "faa62367-a13c-485e-b6ad-29bfc90d6799",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Please enter your name!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c04152e-b049-41b8-9e6c-47af13a5fdf8",
+      "comment": "",
+      "command": "type",
+      "target": "id=yourName",
+      "targets": [
+        ["id=yourName", "id"],
+        ["name=yourName", "name"],
+        ["css=#yourName", "css:finder"],
+        ["xpath=//input[@id='yourName']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Bivas"
+    }, {
+      "id": "c576a2b2-9a42-4821-ac60-e5b6fc574b95",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["name=submitButton", "name"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad2363b6-63da-4e68-aadd-7e94e8d3dc35",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Please type your designation!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "091380e7-4750-4089-b27a-8ae1d396fdd4",
+      "comment": "",
+      "command": "type",
+      "target": "id=designation",
+      "targets": [
+        ["id=designation", "id"],
+        ["name=designation", "name"],
+        ["css=#designation", "css:finder"],
+        ["xpath=//input[@id='designation']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "...."
+    }, {
+      "id": "60944de9-b827-4fa1-8acd-46ee85ebef1c",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["name=submitButton", "name"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e188389d-bf82-42e4-a7a8-2a4ee24c4ae9",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Please enter your organization's name!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bac5617-cb21-474d-8775-14383953093c",
+      "comment": "",
+      "command": "type",
+      "target": "id=organization",
+      "targets": [
+        ["id=organization", "id"],
+        ["name=organization", "name"],
+        ["css=#organization", "css:finder"],
+        ["xpath=//input[@id='organization']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "....."
+    }, {
+      "id": "9a8f5c01-17e9-4f20-9e25-1d34e38fa609",
+      "comment": "",
+      "command": "click",
+      "target": "id=contNumber",
+      "targets": [
+        ["id=contNumber", "id"],
+        ["name=contNumber", "name"],
+        ["css=#contNumber", "css:finder"],
+        ["xpath=//input[@id='contNumber']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5f566bf-2aa4-40cc-895f-d32cf10e0726",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["name=submitButton", "name"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82734e63-921b-46b6-9f06-9fe1ee72ebdc",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Please enter your contact number",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f7ac780-219d-40bf-91a5-ba2b4890c8be",
+      "comment": "",
+      "command": "type",
+      "target": "id=contNumber",
+      "targets": [
+        ["id=contNumber", "id"],
+        ["name=contNumber", "name"],
+        ["css=#contNumber", "css:finder"],
+        ["xpath=//input[@id='contNumber']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "00000000000"
+    }, {
+      "id": "70ee2350-eb83-43ed-acaa-6afa783638d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["name=submitButton", "name"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fbcacfe-017d-4e0a-a930-41eb2552ff9c",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Email address should not be blank",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4628bed-eeb3-470c-8559-f67175c6fa83",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail1",
+      "targets": [
+        ["id=txtEmail1", "id"],
+        ["name=txtEmail1", "name"],
+        ["css=#txtEmail1", "css:finder"],
+        ["xpath=//input[@id='txtEmail1']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "dbivas27@gmail.com"
+    }, {
+      "id": "6a1d3352-b2a7-4e59-bffb-ceb682fab727",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["name=submitButton", "name"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8480a1b2-9aec-4f8c-8b75-86c54169954b",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Please enter the title of the training!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af9d5456-a573-45d6-af21-95450e07420f",
+      "comment": "",
+      "command": "type",
+      "target": "id=trainingTitle",
+      "targets": [
+        ["id=trainingTitle", "id"],
+        ["name=trainingTitle", "name"],
+        ["css=#trainingTitle", "css:finder"],
+        ["xpath=//input[@id='trainingTitle']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "......."
+    }, {
+      "id": "308ff9f1-5a46-400f-87c1-d84157d85986",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["name=submitButton", "name"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "786a18f6-9539-4d22-85b6-baa6c959fa12",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Please enter how you  want the training !",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34668c57-a9ea-41b5-983f-5fcf80b272ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=howYouWntTrng",
+      "targets": [
+        ["id=howYouWntTrng", "id"],
+        ["name=howYouWntTrng", "name"],
+        ["css=#howYouWntTrng", "css:finder"],
+        ["xpath=//textarea[@id='howYouWntTrng']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "........"
+    }, {
+      "id": "3941303b-04f1-43a1-89a0-43bc479e2acd",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["name=submitButton", "name"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2703a513-1e0c-4bbf-b9d9-52839ad28ba0",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Please enter Areas that you prefer to cover in the training !",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2419a89-ded7-4329-974d-95a63507333b",
+      "comment": "",
+      "command": "type",
+      "target": "id=coveringArea",
+      "targets": [
+        ["id=coveringArea", "id"],
+        ["name=coveringArea", "name"],
+        ["css=#coveringArea", "css:finder"],
+        ["xpath=//textarea[@id='coveringArea']", "xpath:attributes"],
+        ["xpath=//div[2]/textarea", "xpath:position"]
+      ],
+      "value": "......."
+    }, {
+      "id": "d03e10a7-8108-445c-ab8f-dea3665f9914",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["name=submitButton", "name"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//input[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ae75f50-2ad0-4aee-9c5e-2dd1a897c4d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reg-area",
+      "targets": [
+        ["css=.reg-area", "css:finder"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "499e1646-1fed-4d23-8c1f-e446d3236ffc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.reg-header > h1",
+      "targets": [
+        ["css=.reg-header > h1", "css:finder"],
+        ["xpath=//div/h1", "xpath:position"]
+      ],
+      "value": "Customized training request"
+    }, {
+      "id": "b43f3eaa-1b4a-4170-a32a-fd6684c12b1f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=OK",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7e8e8e6a-7583-4339-a979-036c04c60219",
+    "name": "Recover Login Info Tests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4eeb1d64-03d3-4166-b8ce-351efc352dbb", "1dff72f0-d41f-427c-b841-579f11a59581", "6c1c1bdb-e77c-45d2-97aa-264c2974577c", "9e087865-7f6b-4117-803e-3c5e2ae0986d", "d26803ef-3e5f-44a9-938f-26597bf37918", "822c01b3-04c0-459a-846d-57a14819541d"]
+  }],
+  "urls": ["https://bdjobs.com/default.asp", "https://elearning.bdjobs.com/workshoplist.asp?track=5"],
+  "plugins": []
+}
